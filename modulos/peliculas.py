@@ -35,7 +35,7 @@ def add_movie():
     campus = cf.check_file(bd)
     if campus is not None and len(campus)>0:
         if campus == [{}]:
-            for i, camper in enumerate(campus):
+            for i in enumerate(campus):
                 campus[i] = bd
                 cf.save_file(campus)
                 os.system('pause')
@@ -44,8 +44,24 @@ def add_movie():
             campus.append(bd)
             cf.save_file(campus)
             os.system('pause')
-    return bd
+    return pelicula
 
 def search():
     data = cf.open_file()
-    id = input('ingrse')
+    id = input('ingrese la pelicula a buscar: ')
+    if pelicula.get('id') == id:
+        print(pelicula['blockbuster']['peliculas'])
+    else:
+        print('No se encontro ese id')
+
+def delete():
+    data = cf.open_file()
+    id = input('ingrese la pelicula a eliminar: ')
+    for i,c in enumerate(data):
+        if pelicula.get('id') == id:
+            index_to_remove = i
+            cf.eliminar(data,index_to_remove = index_to_remove)
+            cf.save_file(data)
+
+
+    
