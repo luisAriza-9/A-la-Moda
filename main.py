@@ -11,16 +11,15 @@ while True:
         print('Error en el dato ingresado')
     else:
         if(op == 1):
-            pass
+            mn.menu_generos()
         elif(op == 2):
-            b.gestor_actores()
+            mn.menu_actores()
         elif(op == 3):
-            pass
+            mn.menu_formatos()
         elif(op == 4):
-            pass
+            mn.menu_informes
         elif(op == 5):
-            pass
+            mn.menu_peliculas()
         elif(op == 6):
             print('Adios, gracias por visitarnos!!')
-            input('Presione any key....')
             break

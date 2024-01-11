@@ -25,15 +25,13 @@ bd = {
 }
 
 def gestor_actores():
+    os.system('cls')
     id_p = (input('ingrese la id de la pelicula: '))
     nombre = input('ingrese el nombre de la pelicula: ')
     duracion = float(input('ingrese la duracion la pelicula: '))
     sipnosis = input('Ingrese la sipnosis de la pelicula: ')
     
-    bd['blockbuster']['peliculas']['id_p'] = id_p
-    bd['blockbuster']['peliculas']['nombre'] = nombre
-    bd['blockbuster']['peliculas']['duracion'] = duracion
-    bd['blockbuster']['peliculas']['sipnosis'] = sipnosis
+    
     
 
     blockB = cf.check_file(bd)
