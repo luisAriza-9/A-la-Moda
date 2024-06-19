@@ -1,0 +1,606 @@
+html {
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fes-es%2Fbuscar%2Ffondos%2F&psig=AOvVaw0jL821Zaah6GeSvDv5FDj9&ust=1718913444151000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD91t256IYDFQAAAAAdAAAAABAE);
+    background-color: rgb(247, 239, 239);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+/* MOVIL */
+/* --------------------------------------------------- */
+@media (max-width: 425px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 4vw;
+    }
+
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header h1 {
+        font-size: 2.5em;
+        color: white;
+        text-align: center;
+    }
+
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2vw;
+    }
+
+    nav a {
+
+        text-decoration: none;
+        background-color: rgb(28, 107, 81);
+        border-radius: 25px;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    nav a:hover {
+        opacity: 90%;
+    }
+
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main {
+        background-color: gray;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 4vw;
+        opacity: 90%;
+        border-radius: 25px;
+    }
+
+    section {
+        border: solid 2px gold;
+        border-radius: 25px;
+    }
+
+    section h2 {
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    section+section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section+section {
+        color: rgb(85, 83, 83);
+    }
+
+    section+section em {
+        color: black;
+    }
+
+    section+section a {
+        text-decoration: none;
+        color: gold;
+    }
+
+    section+section img {
+        width: 30vw;
+        border-radius: 10px;
+    }
+
+    section+section+section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vw;
+    }
+
+    article div img {
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+    article section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    article section ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer {
+        display: grid;
+        background-color: rgb(208, 243, 231);
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 4vw;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+    }
+
+    footer section div img {
+        width: 50vw;
+    }
+
+    footer section+section {
+        gap: 3vw;
+    }
+
+    footer section+section+section div img {
+        width: 25vw;
+    }
+
+    footer section+section+section+section {
+        gap: 3vw;
+    }
+
+    footer section+section+section+section+section {
+        gap: 3vw;
+    }
+
+    footer section+section+section+section+section+section+section+section {
+        border-radius: 0px;
+        background-color: rgb(235, 221, 221);
+        padding: 0vw 0vw 5vw;
+    }
+
+    footer section+section+section+section+section+section+section hr {
+        width: 50vw;
+    }
+
+    footer section+section+section+section+section+section+section a {
+        text-decoration: none;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* TABLET */
+/* --------------------------------------------------- */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 4vw;
+    }
+
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header h1 {
+        font-size: 2.5em;
+        color: rgb(160, 149, 149);
+        text-align: center;
+    }
+
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2vw;
+        padding: 0vw 20vw 0vw;
+    }
+
+    nav a {
+
+        text-decoration: none;
+        background-color: rgb(28, 107, 81);
+        border-radius: 25px;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    nav a:hover {
+        opacity: 90%;
+    }
+
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main {
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "section1 section1"
+            "section2 section3"
+            "section4 section4"
+            "article1 article1";
+        row-gap: 4vw;
+        opacity: 90%;
+        border-radius: 25px;
+        column-gap: 4vw;
+    }
+
+    section {
+        border: solid 2px gold;
+        border-radius: 25px;
+        grid-area: section1;
+    }
+
+    section h2 {
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    section+section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        grid-area: section2;
+    }
+
+    section+section {
+        color: white;
+        font-size: 1em;
+    }
+
+    section+section em {
+        color: black;
+    }
+
+    section+section a {
+        text-decoration: none;
+        color: gold;
+    }
+
+    section+section img {
+        width: 30vw;
+        border-radius: 10px;
+    }
+
+    section+section+section {
+        grid-area: section3;
+    }
+
+    section+section+section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    section+section+section+section {
+        grid-area: section4;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vw;
+        grid-area: article1;
+    }
+
+    article div img {
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+    article section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    article section ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer {
+        display: grid;
+        background-color: rgb(108, 104, 109);
+        grid-template-areas: "section1 section1"
+            "section6 section2"
+            "section5 section4"
+            "section3 section7"
+            "section8 section8";
+        grid-gap: 4vw;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        grid-area: section1;
+    }
+
+    footer section div img {
+        width: 50vw;
+    }
+
+    footer section+section {
+        gap: 3vw;
+        grid-area: section2;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section {
+        grid-area: section3;
+    }
+
+    footer section+section+section div img {
+        width: 15vw;
+    }
+
+    footer section+section+section+section {
+        gap: 3vw;
+        grid-area: section4;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section+section+section {
+        gap: 3vw;
+        grid-area: section5;
+    }
+
+    footer section+section+section+section+section+section {
+        grid-area: section6;
+    }
+
+    footer section+section+section+section+section+section+section {
+        grid-area: section7;
+    }
+
+    footer section+section+section+section+section+section+section+section {
+        border-radius: 0px;
+        background-color: rgb(240, 237, 239);
+        padding: 0vw 0vw 5vw;
+        grid-area: section8;
+    }
+
+    footer section+section+section+section+section+section+section hr {
+        width: 50vw;
+    }
+
+    footer section+section+section+section+section+section+section a {
+        text-decoration: none;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* LAPTOP */
+/* --------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 2561px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 4vw;
+        margin: 0 4vw 0;
+    }
+
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header h1 {
+        font-size: 2.5em;
+        color: white;
+        text-align: center;
+    }
+
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav {
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 0vw 10vw 0vw;
+    }
+
+    nav a {
+
+        text-decoration: none;
+        background-color: rgb(28, 107, 81);
+        border-radius: 25px;
+        color: white;
+        font-size: 2em;
+        padding: 1vw 1vw 1vw ;
+    }
+
+    nav a:hover {
+        opacity: 90%;
+    }
+
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main {
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "section1 section1"
+            "section2 section3"
+            "section4 section4"
+            "article1 article1";
+        
+        opacity: 90%;
+        border-radius: 25px;
+        row-gap: 1vw;
+        margin: 0 4vw 0;
+    }
+
+    section {
+        border: solid 2px gold;
+        border-radius: 25px;
+        grid-area: section1;
+        margin: 2vw 4vw 0;
+    }
+
+    section h2 {
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding:  0 0 0 3vw;
+    }
+
+    section+section {
+        display: inline-block;
+        text-align: center;
+        align-content: center;
+        padding: 0 1vw 0 ;
+        grid-area: section2;
+    }
+
+    section+section {
+        color: white;
+        font-size: 1.4em;
+    }
+
+    section+section em {
+        color: black;
+    }
+
+    section+section a {
+        text-decoration: none;
+        color: gold;
+    }
+
+    section+section img {
+        width: 15vw;
+        border-radius: 10px;
+    }
+
+    section+section+section {
+        grid-area: section3;
+        padding: 0 1vw 2vw ;
+    }
+
+    section+section+section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    section+section+section+section {
+        grid-area: section4;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1vw;
+        grid-area: article1;
+    }
+    article section{
+        margin: 2vw 5vw 2vw;
+    }
+
+    article div img {
+        width: 30vw;
+        border-radius: 10px;
+        margin: 2vw 0 0;
+    }
+
+    article section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    article section ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+
+    article section + section{
+        margin: 0 30vw 2vw ;    
+    }
+
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer {
+        display: grid;
+        background-color: rgb(117, 120, 121);
+        grid-template-areas: "section1 section1"
+            "section6 section2"
+            "section5 section4"
+            "section3 section7"
+            "section8 section8";
+        grid-gap: 4vw;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        grid-area: section1;
+    }
+
+    footer section div img {
+        width: 17vw;
+    }
+
+    footer section+section {
+        gap: 3vw;
+        grid-area: section2;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section {
+        grid-area: section3;
+    }
+
+    footer section+section+section div img {
+        width: 7vw;
+    }
+
+    footer section+section+section+section {
+        gap: 3vw;
+        grid-area: section4;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section+section+section {
+        gap: 3vw;
+        grid-area: section5;
+    }
+
+    footer section+section+section+section+section+section {
+        grid-area: section6;
+    }
+
+    footer section+section+section+section+section+section+section {
+        grid-area: section7;
+    }
+
+    footer section+section+section+section+section+section+section+section {
+        border-radius: 0px;
+        background-color: black;
+        padding: 0vw 0vw 5vw;
+        grid-area: section8;
+        margin: 0vw ;
+    }
+
+    footer section+section+section+section+section+section+section hr {
+        width: 50vw;
+    }
+
+    footer section+section+section+section+section+section+section a {
+        text-decoration: none;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
